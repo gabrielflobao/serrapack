@@ -46,59 +46,52 @@
 </nav>
 <body>
 <div class="container">
-    <form class="needs-validation" novalidate>
+    <form action="/orcamento/novo" method="POST">
         <div class="form-row">
             <div class="col-md-4 mb-3">
-                <label for="validationTooltip01">Data Solicitação</label>
-                <input type="date" class="form-control" id="validationTooltip01" placeholder="dd/MM/yyyy"  required>
+                <label for="dataSolicitacao">Data Solicitação</label>
+                <input id="dataSolicitacao" name="dataSolicitacao" type="date" class="form-control"  placeholder="dd/MM/yyyy"  required>
                 <div class="valid-tooltip">
                 </div>
             </div>
             <div class="col-md-4 mb-3">
-                <select class="custom-select" multiple>
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                <select name="status" class="custom-select" multiple>
+                    <option selected>Status</option>
+                    <option value="1">Pendente</option>
+                    <option value="2">Parcial</option>
+                    <option value="3">Entregue</option>
                 </select>
             </div>
             <div class="col-md-4 mb-3">
-                <label for="validationTooltipUsername">Username</label>
+                <label for="nomeEmpresa">Nome Empresa</label>
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
                     </div>
-                    <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Username" aria-describedby="validationTooltipUsernamePrepend" required>
+                    <input id="nomeEmpresa" name="nomeEmpresa" type="text" class="form-control" placeholder="Nome Empresa" required>
                     <div class="invalid-tooltip">
-                        Please choose a unique and valid username.
+                       Por favor,preencher com o nome da empresa
                     </div>
                 </div>
             </div>
         </div>
         <div class="form-row">
             <div class="col-md-6 mb-3">
-                <label for="validationTooltip03">City</label>
-                <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
+                <label for="telefone">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Telefone" required>
                 <div class="invalid-tooltip">
                     Please provide a valid city.
                 </div>
             </div>
             <div class="col-md-3 mb-3">
-                <label for="validationTooltip04">State</label>
-                <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
+                <label for="observacao">Observação</label>
+                <textarea type="text" class="form-control" id="observacao" name="observacao"  placeholder="Observação" required> </textarea>
                 <div class="invalid-tooltip">
                     Please provide a valid state.
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationTooltip05">Zip</label>
-                <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
-                <div class="invalid-tooltip">
-                    Please provide a valid zip.
-                </div>
-            </div>
         </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
+        <button class="btn btn-primary" type="submit">Cadastrar</button>
     </form>
 
 </div>
