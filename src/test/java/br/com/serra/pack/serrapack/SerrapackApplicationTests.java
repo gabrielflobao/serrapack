@@ -3,7 +3,8 @@ package br.com.serra.pack.serrapack;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+
+@SpringBootTest(classes = SerrapackApplicationTests.class)
 class SerrapackApplicationTests {
 
 	@Test
