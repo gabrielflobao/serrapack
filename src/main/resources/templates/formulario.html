@@ -1,25 +1,66 @@
-<html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{head :: head}"></head>
-<header th:replace="~{header :: header}"></header>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <!-----Boostrap--->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-----Jquery--->
+    <!-----FontAwesome--->
+     <!-----Progress Bar--->
+      <!-----Parallax--->
+     <script src="js/progressbar.min.js"></script>
+    <script src="https://kit.fontawesome.com/cb21ac55c6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<header>
+    <div class="container" id="nav-container">
+        <span id="titulo-pag">Serra Pack</span>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a href="#" class="navbar-brand">
+                <img src="images/serra-pack-logo.jpg" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle Navigation">
+               <span class="navbar-toggler-icon">
+                   </span> 
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" id="pag-principal" href="index.html">Página Principal</a>
+                <a class="nav-item nav-link" id="cadastrar-orcamento" href="formulario.html">Cadastrar Orcamento</a>
+                <a class="nav-item nav-link" id="relatorios">Relatorios</a>
+            </div>
+            </div>
+            </nav>
+
+            
+
+    </div>
+</header>
 <body>
 <div class="container">
     <form action="/orcamento/novo" method="POST">
         <div class="form-row">
-            <div class="col-md-4 mb-3">
+            <div ">
                 <label for="dataSolicitacao">Data Solicitação</label>
                 <input id="dataSolicitacao" name="dataSolicitacao" type="date" class="form-control"  placeholder="dd/MM/yyyy"  required>
                 <div class="valid-tooltip">
                 </div>
-            </div>
-            <div class="col-md-4 mb-3">
+           
+            <div >
                 <select name="status" class="custom-select" multiple>
                     <option selected>Status</option>
                     <option value="Pendente">Pendente</option>
                     <option value="Parcial">Parcial</option>
                     <option value="Entregue">Entregue</option>
                 </select>
-            </div>
-            <div class="col-md-4 mb-3">
+          
+            <div >
                 <label for="nomeEmpresa">Nome Empresa</label>
                 <div class="input-group">
                     <div class="input-group-prepend">
@@ -33,25 +74,87 @@
             </div>
         </div>
         <div class="form-row">
-            <div class="col-md-6 mb-3">
+            <div >
                 <label for="telefone">Telefone</label>
                 <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Telefone" required>
                 <div class="invalid-tooltip">
                     Please provide a valid city.
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
+            <div >
                 <label for="observacao">Observação</label>
                 <textarea type="text" class="form-control" id="observacao" name="observacao"  placeholder="Observação" rows="3" required> </textarea>
                 <div class="invalid-tooltip">
                 </div>
             </div>
+            <br>
         </div>
         <button class="btn btn-primary" type="submit">Cadastrar</button>
     </form>
 
 </div>
-
+<footer class="text-center footer-width-fixe ">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+    
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p class="letras-brancas">
+          Produto desenvolvido para o controle de orcamentos derivados da negociação entre a empresa Serra Pack e seus clientes.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+  
+          <!--Grid column-->
+  
+     
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3 letras-brancas">
+      © 2020 Copyright:
+      <a class="text-white letras-brancas"  href="https://mdbootstrap.com/">Serra Pack</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 </body>
 
 </html>

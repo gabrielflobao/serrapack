@@ -24,7 +24,7 @@ public class OrcamentoController {
     @GetMapping("/todos")
     public String retornaOrcamentos (Model model) {
     model.addAttribute("orcamentos",repo.findAll());
-    return "home";
+    return "index";
     }
 
     @GetMapping("/formulario")

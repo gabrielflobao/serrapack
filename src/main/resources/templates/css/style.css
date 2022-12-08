@@ -1,4 +1,82 @@
-.inputsHeader{
-    margin-left: 500px;
-    width: 500px;
+body{
+    font-family: 'Roboto',sans-serif;
+}
+
+.row{
+    margin:0;
+}
+
+.container {
+    padding: 70px 0;
+
+}
+
+p,li {
+    color:#444;
+    font-size: 14px;
+}
+
+header,.navbar {
+    background-color: #353d41;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 200px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #fff;
+}
+
+.navbar-brand:hover {
+
+    color: #fff;
+}
+
+#navbar-links a {
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+#titulo-pag {
+    color: #fff;
+    text-align: center;
+}
+
+.inputs-pesquisa {
+    padding-top: 50px;
+}
+
+.botao-pesquisa {
+    margin-left: 50%;
+}
+
+.g-col-6 {
+    text-align: center;
+}
+
+.footer-width-fixe {
+    background-color: #09261B;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    
+}
+
+.letras-brancas {
+    color: #fff;
+}
+
+.div-pesquisa {
+    background-color: darkgray;
 }
